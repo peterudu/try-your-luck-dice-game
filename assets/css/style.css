@@ -3,6 +3,15 @@ body {
     background-color: #999966;
     color: #fff;
     text-align: center;
+    margin: 0;
+}
+
+.game-area {
+    box-sizing: border-box;
+    background-color: #9999ff;
+    height: 65vh;
+    width: 100%;
+    margin-bottom: 3em;
 }
 
 #player-area, #computer-area {
