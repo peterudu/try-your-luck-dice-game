@@ -9,7 +9,7 @@ body {
 .game-area {
     box-sizing: border-box;
     background-color: #9999ff;
-    height: 50vh;
+    height: 60vh;
     width: 100%;
     margin-bottom: 3em;
 }
@@ -34,11 +34,11 @@ body {
     padding-bottom: 2em;
 }
 
-#display-result {
-    width: 425px;
+#display-text {
     text-align: center;
     margin: auto;
     font-size: 2em;
+    font-weight: 300;
 }
 
 #roll-dice {
