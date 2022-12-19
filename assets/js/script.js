@@ -1,11 +1,11 @@
-const displayArea = document.getElementById("display-result")
-let displayContent = displayArea.innerHTML;
+const displayArea = document.getElementById("display-area");
+let displayText = document.getElementById("display-text");
 
-const playerArea  = document.getElementById("player-area")
-const playerImage = document.getElementById("pers-img")
+const playerArea  = document.getElementById("player-area");
+const playerImage = document.getElementById("pers-img");
 
-const computerArea = document.getElementById("computer-area")
-const computerImage = document.getElementById("computer-area")
+const computerArea = document.getElementById("computer-area");
+const computerImage = document.getElementById("computer-area");
 
 const gameButton = document.getElementById("roll-dice");
 gameButton.addEventListener("click", function (){
@@ -31,12 +31,24 @@ function rollDice() {
     let diceValues = [playerDice, computerDice];
     playerDiceValue = diceValues[0];
     computerDiceValue = diceValues[1]
-    console.log(playerDiceValue)
-    console.log(computerDiceValue)
-    return diceValues
+    playerArea.innerHTML = `Player scored <br> ${playerDiceValue} points`;
+    computerArea.innerHTML = `Computer scored <br> ${computerDiceValue} points`;
+    
+    let displayMessage;
+    if (playerDiceValue > computerDiceValue) {
+        displayMessage = "Player is winner"
+    } else if (playerDiceValue < computerDiceValue) {
+        displayMessage = "Computer wins"
+    } else if (playerDiceValue === computerDiceValue) {
+        displayMessage = "A draw"
+    }
+    console.log(displayMessage)
+    // return displayMessage
+    
 };
-// rollDice();
-// let diceValues = rollDice();
+rollDice();   
+// const diceValues = rollDice();
+
 // playerDiceValue = diceValues[0]
 // computerDiceValue = diceValues[1]
 // console.log(playerDiceValue);
@@ -44,10 +56,20 @@ function rollDice() {
 // console.log(computerDiceValue);
 
 
-// function displayResult() {
-
+// function displayResult(rollDice) {
+//     rollDice
+//     let displayMessage;
+//     if (playerDiceValue > computerDiceValue) {
+//         displayMessage = "Player is winner"
+//     } else if (playerDiceValue < computerDiceValue) {
+//         displayMessage = "Computer wins"
+//     } else if (playerDiceValue === computerDiceValue) {
+//         displayMessage = "A draw"
+//     }
+//     return displayMessage
 // }
-
+// let displayMessage = displayResult()
+// console.log(displayMessage);
 // function showDiceImage() {
 
 // }
@@ -59,3 +81,9 @@ function rollDice() {
 // function runGame() {
     
 // }
+
+// let diceValueOne = <i class="fa-regular fa-dice-one"></i>
+// let diceValueTwo = <i class="fa-regular fa-dice-two"></i>
+// let diceValueThree = <i class="fa-regular fa-dice-three"></i>
+// let diceValueFour = <i class="fa-regular fa-dice-four"></i>
+// let diceValueFive = <i class="fa-regular fa-dice-five"></i>

@@ -9,24 +9,29 @@ body {
 .game-area {
     box-sizing: border-box;
     background-color: #9999ff;
-    height: 65vh;
+    height: 50vh;
     width: 100%;
     margin-bottom: 3em;
 }
 
 #player-area, #computer-area {
     display: inline-block;
-    width: 200px;
-    height: 150px;
+    width: 300px;
+    height: 250px;
     border: 1px solid #000;
     padding: 5px;
     margin: 25px;
     text-align: center;
     font-weight: 300;
+    font-size: 3em;
 }
 
 #versus {
     display: inline-block;
+    text-align: center;
+    height: 250px;
+    font-size: 2em;
+    padding-bottom: 2em;
 }
 
 #display-result {
