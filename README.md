@@ -17,3 +17,29 @@ The Try your luck dice game site is a simple and enjoyable dice game based on lu
     - The game button is used to control the start of a new game. It also triggers the display of the game status and winner. 
     - This button alone allows the user to control all aspects of the game. No other aid or skills are required to play the game.
     ![game control button](assets/images/button.png)
+
+## Testing
+- The site was successfully tested on Chrome, Firefox and Edge browsers.
+- The page was Lighthouse for accessibility on moblie and desktop devices. For both devices the accessibility score was over high.
+
+![lighthouse test](/assets/images/lighthouse1.png)
+
+### Validator Testing
+- HTML
+    - No errors were detected when tested with [W3C HTML validator](https://validator.w3.org/)
+- CSS 
+    - No errors were detected when tested with [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
+### Fixed Bug
+- I was able to fix the bug preventing me from placing the values from the random dice roll on the display area.
+## Deployment
+- The site was deployed to GitHub pages. For the deployment the following steps were applied:
+    - In GitHub repository, navigate to the Settings tab
+    - From the left sidebar options select Pages and under Github Pages from the source section drop-down menu, select option to deploy from main branch, save and the live link will be generated.
+
+The live link to the hosted project is - https://peterudu.github.io/try-your-luck-dice-game/
+
+## Credits
+### Content
+- The general structure and code pattern used to build the heading section of the page was based on example illustrated in [Code Institute Love Maths Project](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode).
+- The structure and code pattern used to build the game area, the display area and the button was based on JavaScript dice game examples at [YouTube](https://www.youtube.com/), most particulary from [Laurence Svekis - Complete JavaScript Projects Course Games 55 Modern JS DOM](https://www.udemy.com/course/javascript-course-projects/) Udemy course. 
+- The dice icon used as heading logo was sourced from [flaticon](https://www.flaticon.com/icons). For this my biggest thanks is attributed to [Freepick](https://www.flaticon.com/free-icons/dice) 
