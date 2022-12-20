@@ -17,6 +17,9 @@ The Try your luck dice game site is a simple and enjoyable dice game based on lu
     - The game button is used to control the start of a new game. It also triggers the display of the game status and winner. 
     - This button alone allows the user to control all aspects of the game. No other aid or skills are required to play the game.
     ![game control button](assets/images/button.png)
+### Features left to implement
+ - A Future Idea
+    - A function which adds player and computer game scores in a cumulative total.
 
 ## Testing
 - The site was successfully tested on Chrome, Firefox and Edge browsers.
@@ -31,6 +34,7 @@ The Try your luck dice game site is a simple and enjoyable dice game based on lu
     - No errors were detected when tested with [W3C CSS validator](https://jigsaw.w3.org/css-validator/)
 ### Fixed Bug
 - I was able to fix the bug preventing me from placing the values from the random dice roll on the display area.
+- I was able to fix bug preventing the page from being responsive.
 ## Deployment
 - The site was deployed to GitHub pages. For the deployment the following steps were applied:
     - In GitHub repository, navigate to the Settings tab
